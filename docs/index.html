@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Photorealistic Image Generation in T2I ^KDiffusion Models via Background-Aware Token Optimization">
+  <meta name="description" content="Photorealistic Image Generation in T2I Diffusion Models via Background-Aware Token Optimization">
   <meta name="keywords" content="Photorealistic Image Generation, Text-to-Image Diffusion Models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mind the Background</title>
@@ -44,7 +44,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Mind the Background: Photorealistic Image Generation in T2I ^KDiffusion Models via Background-Aware Token Optimization
+            Mind the Background: Photorealistic Image Generation in T2I Diffusion Models via Background-Aware Token Optimization
           </h1>
           <h2 class="title is-4">
             Work in Progress
@@ -98,7 +98,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/kjungwoo03/Depth-Diffusion"
+                <a href="https://github.com/kjungwoo03/Mind-the-Background"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -202,10 +202,10 @@
         <div class="content has-text-justified">
           <p>
             Recent advances in text-to-image (T2I) diffusion models have enabled remarkable progress in generating high-quality photorealistic images. 
-            However, despite their success, generated images are still easily distinguishable from real photographs by modern AI-generated image detectors. 
+            However, despite their success, generated images are still easily distinguishable from real photographs by various AI-generated image detectors. 
             We identify a key source of this gap: attention imbalance between foreground and background. 
-            While objects are rendered with plausible structure, backgrounds often lack sufficient coherence and realistic textures, leaving detectable artifacts. 
-            In this work, we propose a simple solution-learnable background-aware tokens-that encourage diffusion models to reallocate more attention to backgrounds. 
+            While foregrouds (i.e. objects), are rendered with plausible structure, backgrounds often lack sufficient coherence and realistic textures, leaving detectable artifacts. 
+            In this work, we propose a simple solution, learnable background-aware token optimization (BATO), which encourages diffusion models to reallocate more attention to backgrounds. 
             This improves background quality without harming object fidelity, resulting in more photorealistic images. 
             Further experiments across multiple diffusion backbones show consistent gains in visual realism and significant robustness against state-of-the-art detectors. 
             Our work shows how foreground-background imbalance underlies the realism gap in T2I generation and demonstrates an effective way to mitigate it.
